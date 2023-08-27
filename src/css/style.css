@@ -1,0 +1,662 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Medium;
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: SemiBold;
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Bold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: ExtraBold;
+    src: url(../fonts/Montserrat-ExtraBold.ttf);
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 0;
+    position: fixed;
+    z-index: 100;
+    transition: .1s;
+}
+
+nav.bg{
+    background-color: rgb(33, 37, 41);
+}
+
+.navbar {
+    width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navLeft img {
+    width: 150px;
+    transform: translateY(5px);
+}
+
+.navRight {
+    display: flex;
+    gap: 40px;
+}
+
+.navRight a {
+    font-family: Regular;
+    color: #ffffff;
+}
+
+.navRight a:hover {
+    font-family: Regular;
+    color: #ffc800;
+}
+
+.first {
+    width: 100%;
+    height: 80vh;
+    background-image: url('../img/img\ 1.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.firstContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.text1 {
+    font-family: Medium;
+    color: white;
+    font-size: 35px;
+}
+
+.text2 {
+    font-family: Bold;
+    font-size: 70px;
+    color: white;
+}
+
+.firstButton {
+    font-family: Bold;
+    color: white;
+    background-color: #ffc800;
+    padding: 23px 40px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.firstButton:hover {
+    background-color: #d9aa00;
+}
+
+.services {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    margin: 100px 0;
+}
+
+.text3 {
+    font-family: Bold;
+    font-size: 39px;
+    text-align: center;
+    color: #212529;
+}
+
+.text4 {
+    color: #6c757d;
+    font-size: 18px;
+    text-align: center;
+}
+
+.servicesTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.servicesBottom {
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    width: 31.2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.card i {
+    font-size: 60px;
+    color: white;
+}
+
+.iconDiv {
+    width: 130px;
+    height: 130px;
+    background-color: #ffc800;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text5 {
+    font-family: Bold;
+    font-size: 24px;
+}
+
+.portfolio {
+    width: 100%;
+    height: 120vh;
+    background-color: rgb(248, 249, 250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.portfolioTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.cards {
+    width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portfolioCard {
+    width: 32%;
+    height: 412px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    background-color: white;
+    cursor: pointer;
+}
+
+.img{
+    position: relative;
+    height: 312px;
+    width: 100%;
+}
+
+.cardText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 90px;
+    width: 100%;
+}
+
+.portfolioCard .overlay{
+    transition: .3s;
+}
+
+.portfolioCard:hover .overlay{
+   opacity: 1;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 312px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255 200 0 / 90%);
+    opacity: 0;
+}
+
+.fa-plus{
+    font-size: 60px;
+    color: white;
+}
+
+.img img {
+    width: 100%;
+}
+
+.text6 {
+    font-family: Bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+.portfolioBottom {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about {
+    width: 100%;
+    margin: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.aboutMain {
+    width: 1300px;
+}
+
+.aboutTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.aboutSection {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+}
+
+.aboutText {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.text7 {
+    font-family: Bold;
+    font-size: 24px;
+    text-align: right;
+}
+
+.text8 {
+    font-size: 18px;
+    color: #6c757d;
+    text-align: right;
+    line-height: 25px;
+}
+
+.aboutBottom {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 150px;
+    position: relative;
+}
+
+.aboutImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.circleImg {
+    width: 170px;
+    height: 170px;
+    border-radius: 100px;
+    overflow: hidden;
+    border: 7px solid #e9ecef;
+}
+
+.circleImg img {
+    width: 100%;
+}
+
+.about3 {
+    width: 40%;
+}
+
+.text9 {
+    font-family: Bold;
+    font-size: 24px;
+    text-align: left;
+}
+
+.text10 {
+    font-size: 18px;
+    color: #6c757d;
+    text-align: left;
+    line-height: 25px;
+}
+
+.circleText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffc800;
+    color: white;
+    font-family: Bold;
+    font-size: 18px;
+}
+
+.line {
+    background-color: rgb(233, 236, 239);
+    width: 2px;
+    height: 1400px;
+    position: absolute;
+    top: 50px;
+    z-index: -1;
+}
+
+.team {
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(248, 249, 250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 65px;
+}
+
+.teamMiddle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1300px;
+}
+
+.teamTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.text11 {
+    font-family: Bold;
+    font-size: 24px;
+    color: #212529;
+    text-align: center;
+}
+
+.text12 {
+    color: #6c757d;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.teamImg {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 8px solid rgb(0 0 0 / 10%);
+    overflow: hidden;
+}
+
+.teamImg img {
+    width: 100%;
+}
+
+.teamMiddleCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(29, 28, 28);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.icon:hover{
+    background-color: #424649;
+}
+
+.icon i {
+    color: white;
+    font-size: 16px;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.teamBottom{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text13 {
+    color: #6c757d;
+    font-size: 18px;
+    text-align: center;
+    width: 42%;
+    text-align: center;
+}
+
+.company{
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.companyMain{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.companyImg1 img{
+    width: 200px;
+}
+
+.companyImg2 img{
+    width: 120px;
+}
+
+.companyImg3 img{
+    width: 160px;
+}
+
+.companyImg4 img{
+    width: 110px;
+}
+
+.contact{
+    width: 100;
+    height: 70vh;
+    background-image: url('../img/img\ 15.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #212529;
+}
+
+.contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactMain{
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.text14 {
+    font-family: Bold;
+    font-size: 39px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.contactTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.input1{
+    width: 640px;
+    height: 65px;
+    border-radius: 6px;
+    border: none;
+    font-family: Bold;
+    font-size: 16px;
+    padding-left: 18px;
+}
+
+.input1:focus{
+    outline: 1px solid #ffc800;
+}
+
+.input1::placeholder{
+    color: rgb(205, 205, 205);
+}
+
+.input2{
+    width: 640px;
+    height: 240px;
+    border-radius: 6px;
+    border: none;
+    font-family: Bold;
+    font-size: 16px;
+    padding-left: 18px;
+    padding-bottom: 180px;
+}
+
+.input2:focus{
+    outline: 1px solid #ffc800;
+}
+
+.input2::placeholder{
+    color: rgb(205, 205, 205);
+}
+
+.leftInputs{
+    display: flex;
+    flex-direction: column;
+    height: 240px;
+    justify-content: space-between;
+}
+
+.contactBottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.inputs{
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactButton{
+    padding: 25px 45px;
+    border-radius: 10px;
+    border: none;
+    font-family: Bold;
+    color: white;
+    background-color: #ffc800;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contactButton:hover {
+    background-color: #d9aa00;
+}
+
+footer{
+    width: 100%;
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerMain{
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text15{
+    font-family: Regular;
+    font-size: 14px;
+    color: #212529;
+}
+
+.footerBottom{
+    display: flex;
+    gap: 20px;
+}
